@@ -1,0 +1,6 @@
+# MiniClaudeCode dependencies
+# rich: terminal interaction; httpx: async HTTP for the unified Anthropic/OpenAI-compatible backend;
+# python-dotenv: load API key / config from .env
+rich>=13.7.0
+httpx>=0.27.0
+python-dotenv>=1.0.0

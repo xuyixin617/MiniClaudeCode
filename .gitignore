@@ -1,0 +1,36 @@
+# ==== 密钥（绝不上传）====
+.env
+*.pem
+*.key
+
+# ==== Python ====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ==== 测试与缓存 ====
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ==== 虚拟环境 ====
+.venv/
+venv/
+env/
+
+# ==== IDE / 编辑器 ====
+.idea/
+.vscode/
+*.swp
+
+# ==== 运行时本地数据（RAG 索引 / 记忆 / 会话 / 权限白名单）====
+*.db
+memory.json
+sessions/
+whitelist.json
+rules.json
+*.log

@@ -1,0 +1,2 @@
+# dev / test dependencies (for running tests)
+pytest>=8.0.0
