@@ -24,7 +24,7 @@
 ### 3. 权限与安全体系（四层管控）
 - **5 种权限模式**：`default` / `plan` / `acceptEdits` / `bypassPermissions` / `dontAsk`；
 - 声明式 **allow / deny** 规则；
-- **18+ 类高危命令**正则检测；
+- **20 类高危命令**正则检测；
 - 用户交互确认 + **白名单机制**（"总是允许"沉淀为持久化规则）。
 
 ### 4. 上下文与记忆模块
@@ -66,7 +66,7 @@ MiniClaudeCode/
     ├── permission/              # 权限安全体系
     │   ├── modes.py             #   5 种权限模式
     │   ├── rules.py             #   声明式 allow/deny 规则
-    │   ├── dangerous.py         #   18+ 危险命令正则
+    │   ├── dangerous.py         #   20 类危险命令正则
     │   └── manager.py           #   四层管控编排
     ├── context_compress/        # 上下文压缩 + 记忆
     │   ├── pipeline.py          #   4 级流水线编排

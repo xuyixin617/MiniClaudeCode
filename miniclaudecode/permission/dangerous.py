@@ -1,4 +1,4 @@
-"""高危危险命令检测 —— 正则匹配 18 类危险操作。
+"""高危危险命令检测 —— 正则匹配 20 类危险操作。
 
 仅用于 bash 工具的"命令串"检测（也用于 write_file/edit_file 的路径参数检测）。
 命中即视为高风险，需要更严格的确认流程。
@@ -16,7 +16,7 @@ class DangerousPattern:
     description: str
 
 
-# 18+ 类高危命令（正则，re.IGNORECASE 匹配）
+# 20 类高危命令（正则，re.IGNORECASE 匹配）
 DANGEROUS_PATTERNS: list[DangerousPattern] = [
     DangerousPattern("rm_recursive", r"\brm\s+(-\w*\s*)*r[fv]*\b", "递归删除目录"),
     DangerousPattern("rm_force", r"\brm\s+(-\w*\s*)*f\b", "强制删除文件"),

@@ -3,7 +3,7 @@
 四层：
 1. 模式层（mode）：bypassPermissions 直接放行；plan 只读；dontAsk 不询问直接拒；等等。
 2. 规则层（rule）：声明式 allow/deny，deny 优先。
-3. 危险层（danger）：18+ 类高危命令正则检测，命中强制进入确认流程。
+3. 危险层（danger）：20 类高危命令正则检测，命中强制进入确认流程。
 4. 交互层（ask）：用户确认 + 白名单（"总是允许" 会沉淀为持久化 allow 规则）。
 
 判定顺序：bypass -> deny 规则 -> allow 规则 -> 危险检测 -> 模式/类别默认 -> 交互确认。
